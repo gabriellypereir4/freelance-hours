@@ -12,18 +12,9 @@ class WelcomeController extends Controller
      */
     public function __invoke(Request $request)
     {
-        $user = User::find(1);
 
-        // $user = User::query()->create([
-        //     'name' => 'Gabrielly',
-        //     'email' => 'gustavo@gmail.com',
-        //     'password' => 'noturno'
-        // ]);
+        return view('welcome');
 
-        $user->email_verified_at = now();
-        $user->save();
-
-        dd($user->email_verified_at);
     }
 }
 

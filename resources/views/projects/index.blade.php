@@ -6,4 +6,6 @@
 
     </a>
 
+    <livewire:projects.index />
+    
 </x-layouts.app>

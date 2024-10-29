@@ -1,5 +1,7 @@
 <x-layouts.app>
 
-    show
+    <livewire:projects.show 
+        :p="request()->route('project')" 
+    />
 
 </x-layouts.app>
